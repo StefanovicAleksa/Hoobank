@@ -3,7 +3,7 @@ import { navLinks } from "../constants";
 import { useState } from "react";
 
 export default function Navbar() {
-    let [toggle, setToggle] = useState('false');
+    let [toggle, setToggle] = useState(false);
     return (
         <header>
             <nav className={'w-full flex py-6 justify-between items-center navbar'}>
@@ -40,7 +40,8 @@ export default function Navbar() {
                         <ul className="list-none flex flex-col justify-end items-center flex-1">
                             {navLinks.map(link =>
                             <li 
-                                key= {link.id}              className="font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white"
+                                key= {link.id} 
+                                className="font-poppins font-normal cursor-pointer text-[16px] mb-4 text-white last:m-0"
                             >
                                 <a href={link.id}>{link.title}</a>
                             </li>

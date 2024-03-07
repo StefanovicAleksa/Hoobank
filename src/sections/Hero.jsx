@@ -42,6 +42,9 @@ export default function Hero() {
             <div className="absolute z-[1] w-[80%] h-[80%] rounded-full bottom-40 white__gradient"></div>
             <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient"></div>
         </div>
+        <div className="ss:hidden flex justify-center items-center">
+            <GetStarted />
+        </div>
     </section>
   )
 }
